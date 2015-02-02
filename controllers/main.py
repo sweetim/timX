@@ -13,6 +13,7 @@ class MainHandler(webapp2.RequestHandler):
 		obj = {
 			"task": "main",
 			"philosophies": string_en.philosophies,
+			"projects": string_en.project,
 			"year": date.today().year
 		}
 

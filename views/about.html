@@ -1,10 +1,13 @@
-<p class="text-justify">{{ about.description }}</p>
+<div>
+	<p class="text-justify">{{ about.description }}</p>
 
-<h3>People</h3>
-{% for founder in about.founders %}
-	<div class="col-md-12 text-center">
-		<img src={{founder.image}} class="img-circle" alt="Timx Founder" style="height:150px" />
-		<h4>{{founder.title }}</h4>
-		<p>{{ founder.description }}</p>		
-	</div>
-{% endfor %}
+	<h3>People</h3>
+	{% for founder in about.founders %}
+		<div class="col-md-12 text-center">
+			<img src={{founder.image}} class="img-circle" alt="Timx Founder" style="height:150px" />
+			<h4>{{founder.title }}</h4>
+			<p>{{ founder.description }}</p>		
+		</div>
+	{% endfor %}
+</div>
+

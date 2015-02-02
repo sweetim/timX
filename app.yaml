@@ -5,6 +5,10 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /favicon.ico
+  static_files: public/image/favicon.ico
+  upload: public/image/favicon.ico
+
 - url: /public
   static_dir: public
 

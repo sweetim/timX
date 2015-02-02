@@ -30,6 +30,7 @@ project = {
 			"We are creating a platform for users to share their unused books for free "
 			"or a for fee."),
 		"link": "http://mybooks1.herokuapp.com/",
+		"image": "/public/image/library.jpg",
 		"stage": "prototype"
 	}, {
 		"title": "World of C",
@@ -38,7 +39,8 @@ project = {
 			"We are here to change that by providing learning from circuit board "
 			"design to programming the firmware and bringing the data to cloud "
 			"and connecting them with mobile application"),
-		"link": "",
+		"link": "/project",
+		"image": "/public/image/worldofC.jpg",
 		"stage": "concept"
 	}, {
 		"title": "Smoothie",
@@ -46,7 +48,8 @@ project = {
 			"smoothie in the world and we think that why not we create a web "
 			"application that allows us to mix and match the ingredient virtually "
 			"first to know how it would taste and how much nutrition it could offer"),
-		"link": "",
+		"link": "/project",
+		"image": "/public/image/smoothie.jpg",
 		"stage": "concept"
 	}, {
 		"title": "Warabi",
@@ -55,6 +58,7 @@ project = {
 			"out there have the chance of being one of the first person on the scene to "
 			"share their information to the world"),
 		"link": "http://warabi7pg.appspot.com/",
+		"image": "/public/image/warabi.jpg",
 		"stage": "prototype"
 	}]
 }
