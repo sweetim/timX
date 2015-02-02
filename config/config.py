@@ -1,0 +1,4 @@
+TITLE = "Timx"
+
+DB_KIND = "TimxDB"
+DB_ID = "TIMX_DATABASE_ID"
