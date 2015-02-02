@@ -9,7 +9,7 @@
 	{% if project.stage == "prototype" %}
 		<div class="col-md-6">
 			<a href={{ project.link }}><h4>{{ project.title }}</h2></a>
-			<p>{{ project.description }}</p>
+			<p class="text-justify">{{ project.description }}</p>
 		</div>
 	{% endif %}	
 {% endfor %}
@@ -21,7 +21,7 @@
 	{% if project.stage == "concept" %}
 		<div class="col-md-6">
 			<a href={{ project.link }}><h4>{{ project.title }}</h2></a>
-			<p>{{ project.description }}</p>
+			<p class="text-justify">{{ project.description }}</p>
 		</div>
 	{% endif %}	
 {% endfor %}
