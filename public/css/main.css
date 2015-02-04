@@ -1,17 +1,15 @@
 .main {
-    padding-top: 80px;
+    padding-top: 65px;
 }
 
 .footer {
 	height: 3em; position: absolute; bottom 0;
 }
 
-
 /* Carousel base class */
 .carousel {
 	height: 500px;
-	margin-right: -15px;
-	margin-left: -15px;
+	margin: 0 -15px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {

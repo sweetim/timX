@@ -1,5 +1,4 @@
-<div>
-
+<div class="container">
 	<!-- Carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     	<!-- Indicators -->
@@ -73,18 +72,15 @@
     	</a>
     </div><!-- /.carousel -->
 
-
-
-
-
-
-	<h3 class="text-center">Philosophy</h3>
-	{% for philosophy in philosophies %}
-		<div class="col-md-4">
-			<blockquote>
-				<h4>{{ philosophy.title }}</h4>
-			</blockquote>
-			<p class="text-justify">{{ philosophy.description }}</p>
-		</div>
-	{% endfor %}
+    <div class="container">
+        <h3 class="text-center">Philosophy</h3>
+        {% for philosophy in philosophies %}
+            <div class="col-md-4">
+                <blockquote>
+                    <h4>{{ philosophy.title }}</h4>
+                </blockquote>
+                <p class="text-justify">{{ philosophy.description }}</p>
+            </div>
+        {% endfor %}
+    </div>	
 </div>

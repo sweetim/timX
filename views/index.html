@@ -41,18 +41,16 @@
 			</div>
 		</nav>
 
-		<div class="main">
-			<div class="container">
-				{% if task == 'main' %}
-					{% include "main.html" %}
-				{% endif %}
-				{% if task == 'project' %}
-					{% include "project.html" %}
-				{% endif %}
-				{% if task == 'about' %}
-					{% include "about.html" %}
-				{% endif %}
-			</div>
+		<div class="main">			
+			{% if task == 'main' %}
+				{% include "main.html" %}
+			{% endif %}
+			{% if task == 'project' %}
+				{% include "project.html" %}
+			{% endif %}
+			{% if task == 'about' %}
+				{% include "about.html" %}
+			{% endif %}
 		</div>
 		
 		<footer>{{ year }}</footer>

@@ -1,27 +1,29 @@
-<h1>Projects</h1>	
-<p>{{ projects.description.main }}</p>
+<div class="container">
+	<h1>Projects</h1>	
+	<p>{{ projects.description.main }}</p>
 
 
-<h3>Prototype</h2>
-<p>{{ projects.description.prototype }}</p>
+	<h3>Prototype</h2>
+	<p>{{ projects.description.prototype }}</p>
 
-{% for project in projects.projects %}
-	{% if project.stage == "prototype" %}
-		<div class="col-md-6">
-			<a href={{ project.link }}><h4>{{ project.title }}</h2></a>
-			<p class="text-justify">{{ project.description }}</p>
-		</div>
-	{% endif %}	
-{% endfor %}
+	{% for project in projects.projects %}
+		{% if project.stage == "prototype" %}
+			<div class="col-md-6">
+				<a href={{ project.link }}><h4>{{ project.title }}</h2></a>
+				<p class="text-justify">{{ project.description }}</p>
+			</div>
+		{% endif %}	
+	{% endfor %}
 
-<h3>Conceptualization</h2>
-<p>{{ projects.description.concept }}</p>
+	<h3>Conceptualization</h2>
+	<p>{{ projects.description.concept }}</p>
 
-{% for project in projects.projects %}
-	{% if project.stage == "concept" %}
-		<div class="col-md-6">
-			<a href={{ project.link }}><h4>{{ project.title }}</h2></a>
-			<p class="text-justify">{{ project.description }}</p>
-		</div>
-	{% endif %}	
-{% endfor %}
+	{% for project in projects.projects %}
+		{% if project.stage == "concept" %}
+			<div class="col-md-6">
+				<a href={{ project.link }}><h4>{{ project.title }}</h2></a>
+				<p class="text-justify">{{ project.description }}</p>
+			</div>
+		{% endif %}	
+	{% endfor %}	
+</div>
