@@ -72,6 +72,10 @@ about = {
 	"founders": [{
 		"title": "Tim",
 		"description": "A *rojak developer",
-		"image": "https://lh4.googleusercontent.com/-hS29IlO5vcc/U1iffIjfuXI/AAAAAAAABVI/2Vqkbf-csK8/w414-h413-no/10250740_10152711781633998_1735679034_n.jpg"
+		"image": "https://lh4.googleusercontent.com/-hS29IlO5vcc/U1iffIjfuXI/AAAAAAAABVI/2Vqkbf-csK8/w414-h413-no/10250740_10152711781633998_1735679034_n.jpg",
+		"social": {
+			"facebook": "https://www.facebook.com/swee.tim.7",
+			"google": "https://plus.google.com/102243990297953664166"
+		}
 	}]
 }

@@ -6,6 +6,14 @@
 	height: 3em; position: absolute; bottom 0;
 }
 
+.founder-card > div > .social {
+	margin: 20px 0;
+}
+
+.founder-card > div > .social > a {
+	margin: 0 5px;
+}
+
 /* Carousel base class */
 .carousel {
 	height: 500px;
