@@ -1,5 +1,9 @@
 .main {
-    padding-top: 55px;
+    padding-top: 50px;
+}
+
+footer {
+	text-align: center;
 }
 
 blockquote {
@@ -12,10 +16,6 @@ blockquote {
 
 .btn-primary {
     background-color: #3f51b5;
-}
-
-.navbar {
-    max-height: 50px;
 }
 
 .navbar-inverse.navbar {

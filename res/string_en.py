@@ -74,7 +74,7 @@ about = {
 		"We are committed to bring technology to people of all walks of life!"),
 	"founders": [{
 		"title": "Tim",
-		"description": "A *rojak developer",
+		"description": "A *rojak developer who founded TimX in his Warabi, Japan",
 		"image": "https://lh4.googleusercontent.com/-hS29IlO5vcc/U1iffIjfuXI/AAAAAAAABVI/2Vqkbf-csK8/w414-h413-no/10250740_10152711781633998_1735679034_n.jpg",
 		"social": {
 			"facebook": "https://www.facebook.com/swee.tim.7",
