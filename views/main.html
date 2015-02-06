@@ -43,16 +43,20 @@
             </a>
         </div><!-- /.carousel -->
     </div>
-    
+
     <div class="container">
-        <h3 class="text-center">Philosophy</h3>
+        <h2 class="text-center">Philosophy</h2>
         {% for philosophy in philosophies %}
-            <div class="col-md-4">
-                <blockquote>
-                    <h4>{{ philosophy.title }}</h4>
-                </blockquote>
+            <div class="col-sm-4">
+                <div style="text-align:center;">
+                    <span class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x" style="color:#2196F3"></i>
+                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3>{{ philosophy.title }}</h3></li>
+                </div>
                 <p class="text-justify">{{ philosophy.description }}</p>
             </div>
         {% endfor %}
-    </div>	
+    </div>
 </div>
