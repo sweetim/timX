@@ -1,16 +1,19 @@
 philosophies = [{
 	"title": "Community",
+	"icon": "fa-users",
 	"description": ("Our development project constantly "
 		"focus on developing application "
 		"that will improve our community life")
 }, {
 	"title": "Intuitive",
+	"icon": "fa-forumbee",
 	"description": ("Simplicity is the core for all of our "
 		"application building blocks. We believe that "
 		"having a simple interface will enhance our user "
 		"engagement and productivity")
 }, {
 	"title": "Fun",
+	"icon": "fa-venus-mars",
 	"description": "Fun is bake into the core of each of our application."
 }]
 

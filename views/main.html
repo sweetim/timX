@@ -27,7 +27,7 @@
                             <div class="carousel-caption">
                                 <h1>{{ project.title }}</h1>
                                 <p>{{ project.description }}</p>
-                                <p><a class="btn btn-lg btn-primary" href={{ project.link }} role="button">Learn more</a></p>
+                                <p><a class="btn btn-lg btn-danger" href={{ project.link }} role="button">Learn more</a></p>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                 <div style="text-align:center;">
                     <span class="fa-stack fa-3x">
                         <i class="fa fa-circle fa-stack-2x" style="color:#2196F3"></i>
-                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                        <i class="fa {{ philosophy.icon }} fa-stack-1x fa-inverse"></i>
                     </span>
                     <h3>{{ philosophy.title }}</h3></li>
                 </div>
