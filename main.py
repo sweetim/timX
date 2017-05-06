@@ -1,9 +1,7 @@
 import webapp2
 
-from controllers import main, project, about
+from controllers import main
 
 application = webapp2.WSGIApplication([
-    ('/', main.MainHandler),
-    ('/about', about.AboutHandler),
-    ('/project', project.ProjectHandler)
+    ('/', main.MainHandler)
 ], debug=True)
