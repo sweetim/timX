@@ -1,14 +1,13 @@
-#TimX website source code
+## timX website
 
-This web application is written using Python2.8 and using webApp2 framework using Google App Engine(GAE)
+This web application is written using `webApp2` framework and Google App Engine(GAE)
 
-
-[The link to timX web](http://timxlab.appspot.com/)
+ - http://timxlab.appspot.com/
 
 To debug:
 
-    dev_appserver.py Timx/
+    dev_appserver.py .
 
 To deploy:
 
-    appcfg.py update Timx/
+    glcoud app deploy 
