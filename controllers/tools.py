@@ -2,26 +2,26 @@ import webapp2
 
 from router import getView
 
-class ProjectsHandler(webapp2.RequestHandler):
+class ToolsHandler(webapp2.RequestHandler):
 	def get(self):
-		self.response.write(getView("projects", {
-			"template": "projects.html",
+		self.response.write(getView("tools", {
+			"template": "tools.html",
 			"data": {
-				"projects": [{
-					"link": "/projects/pcdviewer",
+				"tools": [{
+					"link": "/tools/pcdviewer",
 					"name": "PCD Viewer",
-					"description": "A point cloud viewer"
+					"description": "A point cloud viewer that reads .pcd file and display them"
 				}, {
-					"link": "/projects/snows",
+					"link": "/tools/snows",
 					"name": "Snows simulator",
 					"description": "A simple snow simulator"
 				}]
 			}
 		}))
 
-class ProjectsNameHandler(webapp2.RequestHandler):
-	def get(self, project_name):
-		projects = [{
+class ToolsNameHandler(webapp2.RequestHandler):
+	def get(self, tool_name):
+		tools = [{
 			"name": "pcdviewer",
 			"source": "pcd.html"
 		}, {
@@ -31,8 +31,8 @@ class ProjectsNameHandler(webapp2.RequestHandler):
 
 		source = "error.html"
 
-		for val in projects:
-			if (val["name"] == project_name):
+		for val in tools:
+			if (val["name"] == tool_name):
 				source = val["source"]
 				break
 
