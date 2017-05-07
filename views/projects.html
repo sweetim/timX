@@ -1,29 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title>Timx</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#3f51b5">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-	<link href="css/main.css" rel="stylesheet">
-</head>
-
-<body>
-	<nav class="blue-grey lighten-3">
-		<div class="nav-wrapper container ">
-			<ul class="right">
-				<li><a href="/">Home</a></li>
-			</ul>
-		</div>
-	</nav>
-    <div class="container">
-        <div class="row">
-            {% for data in projects %}
-                {% include "project_card.html" %}
-            {% endfor %}
-        </div>
-    </div>
-</body>
-
-</html>
+<div class="container">
+	<div class="row">
+		{% for data in view.data.projects %}
+			{% include "project_card.html" %}
+		{% endfor %}
+	</div>
+</div>

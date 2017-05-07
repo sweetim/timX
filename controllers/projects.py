@@ -1,22 +1,41 @@
-import os
 import webapp2
 
-from google.appengine.ext.webapp import template
+from router import getView
 
 class ProjectsHandler(webapp2.RequestHandler):
 	def get(self):
-		path = os.path.join(os.path.dirname(__file__), '../views' ,'projects.html')
+		self.response.write(getView("projects", {
+			"template": "projects.html",
+			"data": {
+				"projects": [{
+					"link": "/projects/pcdviewer",
+					"name": "PCD Viewer",
+					"description": "A point cloud viewer"
+				}, {
+					"link": "/projects/snows",
+					"name": "Snows simulator",
+					"description": "A simple snow simulator"
+				}]
+			}
+		}))
 
-		obj = {
-			"projects": [{
-				"link": "/public/pcd.html",
-				"name": "PCD Viewer",
-                "description": "A point cloud viewer"
-			}, {
-				"link": "/snows",
-				"name": "Snows simulator",
-                "description": "A simple snow simulator"
-			}]
-		}
+class ProjectsNameHandler(webapp2.RequestHandler):
+	def get(self, project_name):
+		projects = [{
+			"name": "pcdviewer",
+			"source": "pcd.html"
+		}, {
+			"name": "snow",
+			"source": "snow.html"
+		}]
 
-		self.response.write(template.render(path, obj))
+		source = "error.html"
+
+		for val in projects:
+			if (val["name"] == project_name):
+				source = val["source"]
+				break
+
+		path = os.path.join(os.path.dirname(__file__), '../views', source)
+
+		self.response.write(template.render(path, {}))

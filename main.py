@@ -4,5 +4,6 @@ from controllers import main, projects
 
 application = webapp2.WSGIApplication([
     ('/', main.MainHandler),
-    ('/projects', projects.ProjectsHandler)
+    webapp2.Route(r'/projects', handler=projects.ProjectsHandler),
+    webapp2.Route(r'/projects/<project_name>', handler=projects.ProjectsNameHandler)
 ], debug=True)
