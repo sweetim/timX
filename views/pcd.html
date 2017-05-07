@@ -1,28 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Timx</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#3f51b5">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-	<link href="public/css/main.css" rel="stylesheet">
-    <style>
-        body { 
-            margin: 0;
-            overflow: hidden;
-        }
-        canvas { width: 100%; height: 100% }
-    </style>
-</head>
-<body>
-    <nav class="blue darken-1">
-		<div class="nav-wrapper container ">
-			<ul class="right">
-				<li><a href="/projects">Projects</a></li>
-			</ul>
-		</div>
-	</nav>
-    <script src="../public/pcd/vendor.js"></script>
-    <script src="../public/pcd/bundle.js"></script>
-</body>
-</html>
+ <style>
+    body { 
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    canvas {
+        height: 100%;
+        width: 100%;
+    }
+</style>
+
+<div id="button_input_file" class="fixed-action-btn">
+    <input type="file" id="selectedFile" style="display: none;" />
+    <a class="btn-floating btn-large red" onclick="document.getElementById('selectedFile').click();">
+    <i class="large material-icons">perm_media</i>
+    </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="../public/pcd/vendor.js"></script>
+<script src="../public/pcd/bundle.js"></script>

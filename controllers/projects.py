@@ -36,6 +36,7 @@ class ProjectsNameHandler(webapp2.RequestHandler):
 				source = val["source"]
 				break
 
-		path = os.path.join(os.path.dirname(__file__), '../views', source)
-
-		self.response.write(template.render(path, {}))
+		self.response.write(getView("pcdviewer", {
+			"template": "pcd.html",
+			"data": {}
+		}))

@@ -1,13 +1,12 @@
 import os
-import logging
 
 from google.appengine.ext.webapp import template
 
 def getView(current, data):
     path = os.path.join(os.path.dirname(__file__), '../views' ,'router.html')
-    logging.error(current)
+
     router = {
-        "home": "/",
+        "about": "/",
         "projects": "/projects"
     }
 

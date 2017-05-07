@@ -3,9 +3,9 @@ import webapp2
 from datetime import date
 from router import getView
 
-class MainHandler(webapp2.RequestHandler):
+class AboutHandler(webapp2.RequestHandler):
 	def get(self):
-		self.response.write(getView("home", {
+		self.response.write(getView("about", {
 			"template": "home.html",
 			"data": {
 				"references": [{
