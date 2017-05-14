@@ -1,0 +1,20 @@
+<div class="container">
+    <p>Interesting links that I found useful</p>
+    <table class="centered bordered responsive-table highlight">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for data in view.data %}
+            <tr>
+                <td><a href={{data.link}} target="_blank">{{data.title}}</a></td>
+                <td>{{data.language}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

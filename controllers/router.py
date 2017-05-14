@@ -8,7 +8,8 @@ def getView(current, data):
 
     router = OrderedDict([
         ("about", "/"),
-        ("tools", "/tools")
+        ("tools", "/tools"),
+        ("links", "/links")
     ])
 
     routerLinks = { k: v for k, v in router.iteritems() if k != current}
