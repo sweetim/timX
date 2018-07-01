@@ -10,6 +10,9 @@ handlers:
 - url: /public
   static_dir: public
 
+- url: /bitbucket
+  static_dir: dist
+
 - url: /.*
   script: main.application
 
