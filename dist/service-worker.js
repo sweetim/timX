@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.3.0/workbox-sw.js");
 
 importScripts(
-  "/bitbucket/precache-manifest.321be6a19ad4e7854fb46b1ce33d2ac8.js"
+  "/bitbucket/precache-manifest.b35b789fcd8e4447ec833cc5e16da880.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "bitbucket_pipeline_dashboard"});
