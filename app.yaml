@@ -7,11 +7,16 @@ handlers:
   static_files: public/image/favicon.ico
   upload: public/image/favicon.ico
 
+- url: /bitbucket/(.*\.(css|json|html|js|map|png))
+  static_files: dist/\1
+  upload: dist/(.*\.(css|json|html|js|map|png))
+
+- url: /bitbucket/?(.*?)
+  static_files: dist/index.html
+  upload: dist/index.html
+
 - url: /public
   static_dir: public
-
-- url: /bitbucket
-  static_dir: dist
 
 - url: /.*
   script: main.application
