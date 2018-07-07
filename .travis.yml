@@ -1,0 +1,5 @@
+script:
+  - git clone https://github.com/sweetim/bitbucket_pipeline_dashboard.git
+  - cd bitbucket_pipeline_dashboard
+  - npm ci
+  - npm run build
