@@ -1,8 +1,13 @@
-script:
-  - git clone https://github.com/sweetim/bitbucket_pipeline_dashboard.git
-  - cd bitbucket_pipeline_dashboard
-  - npm install
-  - npm run build
+jobs:
+  include:
+    - stage: bitbucket_pipeline
+      script: git clone https://github.com/sweetim/bitbucket_pipeline_dashboard.git
+      script: cd bitbucket_pipeline_dashboard && npm install && npm run build
+    - stage: deploy
+      script: ls
+stages:
+  - bitbucket_pipeline
+  - deploy
 
 notifications:
   email: false
